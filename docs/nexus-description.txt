@@ -1,34 +1,44 @@
+[center][youtube]EqMHyXVd69c[/youtube][/center]
+
+[line]
+
 [heading][color=#8ECFFB]Description[/color][/heading]
-Wyrd ReShade is a performance-friendly dark fantasy preset that pulls Skyrim back toward its vanilla cold northern palette.
+Wyrdlight ReShade is a performance-friendly dark fantasy preset that pulls Skyrim back toward its vanilla cold northern palette.
 
-That is the main appeal: it makes Skyrim look like Skyrim. It leans into a darker, cooler image with a blue-purple tint, measured vibrance, and adaptive ambient light around brighter areas.
+That's the main appeal: it makes Skyrim look like Skyrim. It leans into a darker, cooler image with a blue-purple tint, measured vibrance, and adaptive ambient light around brighter areas.
 
-The preset focuses on tone, colour, exposure, black point, ambient light, and subtle film response. The result is crisp, moody, readable Skyrim without turning the game into something overly warm, soft, or modern-looking. Fully equipped for the slaying of dragons.
+The preset focuses on tone, colour, exposure, black point, ambient light, and subtle film response. The result is crisp, moody, readable Skyrim with a darker fantasy edge while still feeling true to the original game. Fully equipped for the slaying of dragons.
 
+[line]
 
 [heading][color=#8ECFFB]Features[/color][/heading]
 [list]
 [*]Performance-friendly dark fantasy ReShade preset.[/*]
+[*]Negligible performance impact with Ambient Light turned off; Ambient Light costs about 2 FPS when enabled.[/*]
 [*]Restores a colder vanilla-Skyrim colour palette.[/*]
 [*]Darkens and cools the image while keeping it readable.[/*]
 [*]Adds measured vibrance and adaptive ambient light.[/*]
 [*]Uses subtle filmic contrast, levels, and tone mapping.[/*]
-[*]Included shader folder so the preset can find the effects it needs.[/*]
-[*]Configured for Skyrim with paths you can point at your own install location.[/*]
 [/list]
 
+[line]
 
 [heading][color=#8ECFFB]Installation[/color][/heading]
 [list=1]
 [*]Download and run [url=https://reshade.me/]ReShade[/url].[/*]
-[*]When the installer asks for a game, select [b]SkyrimSE.exe[/b] in your Skyrim directory.[/*]
-[*]Choose the [b]DirectX 10/11/12[/b] rendering API.[/*]
-[*]Finish the ReShade install.[/*]
-[*]Install or copy this mod's files into your Skyrim directory, not the Data folder.[/*]
+[*]When the installer asks for a game, select [b]SkyrimSE.exe[/b] in your Skyrim directory or Stock Game folder.[/*]
+[*]Choose the [b]DirectX 10/11/12[/b] rendering API and finish the ReShade install.[/*]
+[*]Install [b]WyrdlightReShade.zip[/b] manually or with Mod Organizer 2 Root Builder.[/*]
 [*]Open [b]ReShade.ini[/b] and replace every [b]1234[/b] with your Skyrim directory.[/*]
 [/list]
 
 Your Skyrim directory is the folder that contains [b]SkyrimSE.exe[/b].
+
+[b]Manual install:[/b] open [b]WyrdlightReShade.zip[/b] and copy the contents of the [b]root[/b] folder into your Skyrim directory or Stock Game folder. Do not copy the [b]root[/b] folder itself.
+
+[b]MO2 Root Builder:[/b] install [b]WyrdlightReShade.zip[/b] as a normal MO2 mod and let Root Builder deploy the [b]root[/b] folder to your Skyrim directory or Stock Game folder.
+
+[b]dxgi.dll:[/b] this is the ReShade loader. It can be installed by the ReShade installer, placed in its own MO2 Root Builder mod, or placed inside this mod's [b]root[/b] folder. It must end up beside [b]SkyrimSE.exe[/b].
 
 For a normal Skyrim install, this is usually the expected Steam path:
 
@@ -52,39 +62,42 @@ Keep the rest of each path after [b]1234[/b] unchanged.
 
 Example:
 
-[b]CurrentPresetPath=1234\Wyrd.ini[/b]
+[b]CurrentPresetPath=1234\Wyrdlight.ini[/b]
 
 becomes:
 
-[b]CurrentPresetPath=G:\Modding\LoreRim\Stock Game\Wyrd.ini[/b]
+[b]CurrentPresetPath=G:\Modding\LoreRim\Stock Game\Wyrdlight.ini[/b]
 
+[line]
 
 [heading][color=#8ECFFB]Expected File Layout[/color][/heading]
-After installation, these files and folders should be in the same folder as [b]SkyrimSE.exe[/b]:
+After installation or Root Builder deployment, these files and folders should be in the same folder as [b]SkyrimSE.exe[/b]:
 
 [list]
+[*][b]dxgi.dll[/b][/*]
 [*][b]ReShade.ini[/b][/*]
-[*][b]Wyrd.ini[/b][/*]
+[*][b]Wyrdlight.ini[/b][/*]
 [*][b]reshade-shaders\Shaders[/b][/*]
 [*][b]reshade-shaders\Textures[/b][/*]
 [/list]
 
-If you use Mod Organizer 2 with a root-folder deployment method, make sure the files are deployed to the Skyrim directory. For Wabbajack Stock Game setups, that means the [b]Stock Game[/b] folder. They should not end up inside [b]Data[/b].
+If you use Mod Organizer 2 with Root Builder, keep the archive's [b]root[/b] folder structure. Root Builder should deploy those files to the Skyrim directory. For Wabbajack Stock Game setups, that means the [b]Stock Game[/b] folder. They should not end up inside [b]Data[/b].
 
+[line]
 
 [heading][color=#8ECFFB]Use[/color][/heading]
 Launch Skyrim normally after installing ReShade and updating the paths in [b]ReShade.ini[/b].
 
-Open the ReShade overlay in game with [b]Home[/b] if you need to confirm that [b]Wyrd.ini[/b] is selected.
+Open the ReShade menu in game with [b]Ctrl+F12[/b] if you need to confirm that [b]Wyrdlight.ini[/b] is selected.
 
+Toggle ReShade effects on or off with [b]Scroll Lock[/b].
+
+[line]
 
 [heading][color=#8ECFFB]Troubleshooting[/color][/heading]
 [list]
 [*]If the preset does not load, recheck that every [b]1234[/b] in [b]ReShade.ini[/b] was replaced.[/*]
 [*]If shaders are missing, confirm that [b]reshade-shaders[/b] is in the Skyrim directory.[/*]
-[*]If ReShade does not open in game, rerun the [url=https://reshade.me/]ReShade installer[/url] and confirm that it was installed for [b]SkyrimSE.exe[/b].[/*]
+[*]If ReShade does not open in game, confirm that [b]dxgi.dll[/b] is beside [b]SkyrimSE.exe[/b].[/*]
+[*]If you use MO2 Root Builder and files are missing, rebuild or redeploy your root files.[/*]
 [/list]
-
-
-[heading][color=#8ECFFB]Credits[/color][/heading]
-Wyrd ReShade was made by Keenan Selbee.
