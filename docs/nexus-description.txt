@@ -1,5 +1,8 @@
-[center][youtube]EqMHyXVd69c[/youtube][/center]
+[center][url=https://www.nexusmods.com/skyrimspecialedition/mods/185229][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783990102-413141784.png[/img][/url] [url=https://www.nexusmods.com/skyrimspecialedition/mods/184880][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783986974-194452550.png[/img][/url] [url=https://www.nexusmods.com/site/mods/2074][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783990712-896066535.png[/img][/url] [url=https://www.nexusmods.com/site/mods/2075][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783986946-763882428.png[/img][/url][/center]
 
+[line]
+
+[center][youtube]e15tVIpke4U[/youtube][/center]
 [line]
 
 [heading][color=#8ECFFB]Description[/color][/heading]
@@ -101,3 +104,31 @@ Toggle ReShade effects on or off with [b]Scroll Lock[/b].
 [*]If ReShade does not open in game, confirm that [b]dxgi.dll[/b] is beside [b]SkyrimSE.exe[/b].[/*]
 [*]If you use MO2 Root Builder and files are missing, rebuild or redeploy your root files.[/*]
 [/list]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
