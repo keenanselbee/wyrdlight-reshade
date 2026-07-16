@@ -1,0 +1,5 @@
+{
+	"terminal.integrated.env.windows": {
+		"Path": "${workspaceFolder}\\tools\\bin;${env:Path}"
+	}
+}

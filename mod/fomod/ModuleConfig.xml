@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+	<moduleName>Wyrdlight ReShade - Northern Skies</moduleName>
+	<installSteps order="Explicit">
+		<installStep name="Setup Instructions">
+			<optionalFileGroups order="Explicit">
+				<group name="Read Before Installing" type="SelectExactlyOne">
+					<plugins order="Explicit">
+						<plugin name="Install Wyrdlight ReShade - Northern Skies">
+							<description>After installing, open this mod in Explorer and run root\Wyrdlight ReShade Setup.exe. The setup tool downloads dxgi.dll from reshade.me, detects or asks for your Skyrim or Stock Game folder, updates ReShade.ini paths, and sets shortcut keys and screenshots. For MO2 Root Builder, run it from this installed mod's root folder, accept the detected folder, choose to configure the mod folder for Root Builder, then launch through MO2 normally. Manual users can copy the contents of root into the Skyrim or Stock Game folder and run the setup EXE there.</description>
+							<image path="fomod\images\nexus-main.png" />
+							<files>
+								<folder source="root" destination="root" priority="0" />
+							</files>
+							<typeDescriptor>
+								<type name="Recommended" />
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+	</installSteps>
+</config>
