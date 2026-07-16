@@ -1,4 +1,4 @@
-[center][url=https://www.nexusmods.com/skyrimspecialedition/mods/185229][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783990102-413141784.png[/img][/url] [url=https://www.nexusmods.com/skyrimspecialedition/mods/184880][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783986974-194452550.png[/img][/url] [url=https://www.nexusmods.com/site/mods/2074][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783990712-896066535.png[/img][/url] [url=https://www.nexusmods.com/site/mods/2075][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783986946-763882428.png[/img][/url][/center]
+[center][url=https://www.nexusmods.com/skyrimspecialedition/mods/185229][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783998805-479517253.png[/img][/url] [url=https://www.nexusmods.com/skyrimspecialedition/mods/184880][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1783986974-194452550.png[/img][/url] [url=https://www.nexusmods.com/site/mods/2074][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1784070067-1053981740.png[/img][/url] [url=https://www.nexusmods.com/site/mods/2075][img width=150,height=108]https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/27633/27633-1784070472-1952938379.png[/img][/url][/center]
 
 [line]
 
@@ -17,6 +17,7 @@ The preset focuses on tone, colour, exposure, black point, ambient light, and su
 [heading][color=#8ECFFB]Features[/color][/heading]
 [list]
 [*]Performance-friendly dark fantasy ReShade preset.[/*]
+[*]Easy installation tool that downloads ReShade and configures paths, shortcut keys, and screenshots for you.[/*]
 [*]Negligible performance impact with Ambient Light turned off; Ambient Light costs about 2 FPS when enabled.[/*]
 [*]Restores a colder vanilla-Skyrim colour palette.[/*]
 [*]Darkens and cools the image while keeping it readable.[/*]
@@ -27,21 +28,33 @@ The preset focuses on tone, colour, exposure, black point, ambient light, and su
 [line]
 
 [heading][color=#8ECFFB]Installation[/color][/heading]
+[b]Recommended: use the setup tool.[/b] It downloads ReShade, configures paths, sets shortcut keys, and writes the screenshot folder for you.
+
 [list=1]
-[*]Download and run [url=https://reshade.me/]ReShade[/url].[/*]
-[*]When the installer asks for a game, select [b]SkyrimSE.exe[/b] in your Skyrim directory or Stock Game folder.[/*]
-[*]Choose the [b]DirectX 10/11/12[/b] rendering API and finish the ReShade install.[/*]
-[*]Install [b]WyrdlightReShade.zip[/b] manually or with Mod Organizer 2 Root Builder.[/*]
-[*]Open [b]ReShade.ini[/b] and replace every [b]1234[/b] with your Skyrim directory.[/*]
+[*]Install [b]Wyrdlight ReShade - Northern Skies.zip[/b] with Mod Organizer 2, or extract it manually.[/*]
+[*]Open the installed mod in Explorer and run [b]root\Wyrdlight ReShade Setup.exe[/b].[/*]
+[*]Accept the detected [b]Stock Game[/b] or Skyrim folder. If the tool cannot detect it, browse to the folder containing [b]SkyrimSE.exe[/b].[/*]
+[*]For MO2 Root Builder, choose to configure the installed mod folder for Root Builder.[/*]
+[*]Choose the latest full add-on ReShade build, shortcut keys, and screenshot folder. The tool will download [b]dxgi.dll[/b] from [b]reshade.me[/b] and update [b]ReShade.ini[/b].[/*]
+[*]Launch through MO2 normally, or launch Skyrim from the game folder for a direct/manual install.[/*]
 [/list]
 
 Your Skyrim directory is the folder that contains [b]SkyrimSE.exe[/b].
 
-[b]Manual install:[/b] open [b]WyrdlightReShade.zip[/b] and copy the contents of the [b]root[/b] folder into your Skyrim directory or Stock Game folder. Do not copy the [b]root[/b] folder itself.
+[b]MO2 Root Builder:[/b] install the archive as a normal MO2 mod. Run [b]Wyrdlight ReShade Setup.exe[/b] from inside the installed mod's [b]root[/b] folder. If it detects your [b]Stock Game[/b] folder, accept it and choose to configure the mod folder for Root Builder. With LoreRim-style Root Builder setups, deployment happens when you launch through MO2 according to the modlist's Root Builder settings.
 
-[b]MO2 Root Builder:[/b] install [b]WyrdlightReShade.zip[/b] as a normal MO2 mod and let Root Builder deploy the [b]root[/b] folder to your Skyrim directory or Stock Game folder.
+[b]Manual install with the setup tool:[/b] open the archive, copy the contents of the [b]root[/b] folder into your Skyrim directory or Stock Game folder, then run [b]Wyrdlight ReShade Setup.exe[/b] from there. Do not copy the [b]root[/b] folder itself.
 
-[b]dxgi.dll:[/b] this is the ReShade loader. It can be installed by the ReShade installer, placed in its own MO2 Root Builder mod, or placed inside this mod's [b]root[/b] folder. It must end up beside [b]SkyrimSE.exe[/b].
+[b]Full manual fallback:[/b] if you cannot run the setup tool, copy the contents of the [b]root[/b] folder into your Skyrim directory or Stock Game folder. Install the official ReShade full add-on build for [b]SkyrimSE.exe[/b] using the DirectX 10/11/12 option, or place the ReShade loader there as [b]dxgi.dll[/b]. Then edit [b]ReShade.ini[/b] so the preset, shader, and texture paths point to your game folder:
+
+[list]
+[*][b]CurrentPresetPath[/b] and [b]PresetFiles[/b] should point to [b]Wyrdlight.ini[/b].[/*]
+[*][b]EffectSearchPaths[/b] should point to [b]reshade-shaders\Shaders[/b].[/*]
+[*][b]TextureSearchPaths[/b] should point to [b]reshade-shaders\Textures[/b].[/*]
+[*]If using ENB, leave proxy loading disabled unless you know you need it.[/*]
+[/list]
+
+[b]dxgi.dll:[/b] this is the ReShade loader. The setup tool downloads and installs it for you. It must end up beside [b]SkyrimSE.exe[/b], either directly or through Root Builder deployment.
 
 For a normal Skyrim install, this is usually the expected Steam path:
 
@@ -53,28 +66,10 @@ Wabbajack example:
 
 [b]G:\Modding\LoreRim\Stock Game[/b]
 
-Example:
-
-[b]1234[/b]
-
-becomes:
-
-[b]G:\Modding\LoreRim\Stock Game[/b]
-
-Keep the rest of each path after [b]1234[/b] unchanged.
-
-Example:
-
-[b]CurrentPresetPath=1234\Wyrdlight.ini[/b]
-
-becomes:
-
-[b]CurrentPresetPath=G:\Modding\LoreRim\Stock Game\Wyrdlight.ini[/b]
-
 [line]
 
 [heading][color=#8ECFFB]Expected File Layout[/color][/heading]
-After installation or Root Builder deployment, these files and folders should be in the same folder as [b]SkyrimSE.exe[/b]:
+After setup and Root Builder deployment, or after a direct manual install, these files and folders should be in the same folder as [b]SkyrimSE.exe[/b]:
 
 [list]
 [*][b]dxgi.dll[/b][/*]
@@ -89,7 +84,7 @@ If you use Mod Organizer 2 with Root Builder, keep the archive's [b]root[/b] fol
 [line]
 
 [heading][color=#8ECFFB]Use[/color][/heading]
-Launch Skyrim normally after installing ReShade and updating the paths in [b]ReShade.ini[/b].
+Launch Skyrim normally after running [b]Wyrdlight ReShade Setup.exe[/b]. If you use MO2 Root Builder, launch through MO2 as usual; Root Builder should deploy root files according to your modlist's settings.
 
 Open the ReShade menu in game with [b]Ctrl+F12[/b] if you need to confirm that [b]Wyrdlight.ini[/b] is selected.
 
@@ -99,19 +94,11 @@ Toggle ReShade effects on or off with [b]Scroll Lock[/b].
 
 [heading][color=#8ECFFB]Troubleshooting[/color][/heading]
 [list]
-[*]If the preset does not load, recheck that every [b]1234[/b] in [b]ReShade.ini[/b] was replaced.[/*]
+[*]If the preset does not load, rerun [b]Wyrdlight ReShade Setup.exe[/b] from the installed mod's [b]root[/b] folder and confirm that it detected or was given the folder containing [b]SkyrimSE.exe[/b].[/*]
 [*]If shaders are missing, confirm that [b]reshade-shaders[/b] is in the Skyrim directory.[/*]
 [*]If ReShade does not open in game, confirm that [b]dxgi.dll[/b] is beside [b]SkyrimSE.exe[/b].[/*]
-[*]If you use MO2 Root Builder and files are missing, rebuild or redeploy your root files.[/*]
+[*]If you use MO2 Root Builder and files are missing, confirm Root Builder is enabled for your modlist and launch through MO2 so its normal root deployment can run.[/*]
 [/list]
-
-
-
-
-
-
-
-
 
 
 
